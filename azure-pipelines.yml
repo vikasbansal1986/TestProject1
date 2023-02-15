@@ -1,5 +1,6 @@
 # Docker
 
+
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
@@ -28,3 +29,9 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
+    - task: NeuVectorScan@3
+      inputs:
+        scanType: 'external'
+        neuvectorScanner: 'Neuvector on Azure'
+        repository: '$(repositoryName)'
+        tag: '$(repositoryTag)'
