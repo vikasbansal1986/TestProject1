@@ -33,5 +33,5 @@ stages:
       inputs:
         scanType: 'external'
         neuvectorScanner: 'Neuvector on Azure'
-        repository: '$(repositoryName)'
-        tag: '$(repositoryTag)'
+        repository: node
+        tag: 12.18.1
