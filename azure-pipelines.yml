@@ -1,9 +1,5 @@
 # Docker
-- task: NeuVectorScan@3
-  inputs:
-    scanType: 'standalone'
-    nvRepository: 'neuvector/scanner'
-    nvTag: 'latest'
+
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
