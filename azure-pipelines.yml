@@ -38,7 +38,7 @@ stages:
         nvTag: 'latest'
         containerRegistry: 'NeuVector Registry on Docker'
         repository: 'library/alpine'
-        tag: 'latest'
+        tag: '3.10'
         failOnHighSeverityThreshold: false
         highSeverityThreshold: '2'
         failOnMediumSeverityThreshold: false
