@@ -29,6 +29,7 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'
         tags: |
           $(tag)
+    
     - task: NeuVectorScan@3
       inputs:
         scanType: 'standalone'
@@ -38,3 +39,7 @@ stages:
         containerRegistry: 'NeuVector Registry on Docker'
         repository: 'library/alpine'
         tag: 'latest'
+        failOnHighSeverityThreshold: false
+        highSeverityThreshold: '2'
+        failOnMediumSeverityThreshold: false
+        mediumSeverityThreshold: '4'
