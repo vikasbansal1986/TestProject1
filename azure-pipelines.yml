@@ -31,14 +31,10 @@ stages:
           $(tag)
     - task: NeuVectorScan@3
       inputs:
-        #scanType: 'external'
-        #neuvectorScanner: 'Neuvector on Azure'
-        #repository: node
-        #tag: 12.18.1
         scanType: 'standalone'
         nvContainerRegistry: 'NeuVector Registry on Docker'
         nvRepository: 'neuvector/scanner'
         nvTag: 'latest'
-        containerRegistry: 'Docker Hub'
+        containerRegistry: 'NeuVector Registry on Docker'
         repository: 'library/alpine'
         tag: 'latest'
