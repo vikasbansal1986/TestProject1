@@ -5,7 +5,6 @@
   ],
   "timezone": "Asia/Calcutta",
   "schedule": [
-    "every hour",
     "at 04:25 pm"
   ]
 }
